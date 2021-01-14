@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: rgb(51, 50, 54); */
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    171.8deg,
+    rgba(5, 111, 146, 1) 13.5%,
+    rgba(6, 57, 84, 1) 78.6%
+  );
+}
+.triple {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.block {
+  width: 200px;
+  height: 400px;
+  background: url(https://static.photocdn.pt/images/articles/2019/01/31/Landscape_Photography_Tips.jpg);
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.block__side {
+  width: 70px;
+  transform: perspective(1000px) rotateY(-70deg);
+  transform-origin: right;
+  filter: brightness(50%);
+}
+.block__front {
+  transform: perspective(1000px) rotateY(20deg);
+  transform-origin: left;
+}
+.block__side--small {
+  transform: perspective(1000px) rotateY(-70deg) scale(0.9);
+}
+.block__front--small {
+  transform: perspective(1000px) rotateY(20deg) scale(0.9);
+}
+
+/* .comparison {
+  width: 100vw;
+  height: 50vh;
+  text-align: center;
+  background: url(https://static.photocdn.pt/images/articles/2019/01/31/Landscape_Photography_Tips.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+} */
